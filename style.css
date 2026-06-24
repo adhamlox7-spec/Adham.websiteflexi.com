@@ -203,52 +203,169 @@
       box-shadow: 0 32px 120px rgba(0,0,0,0.5);
       object-fit: cover;
       filter: saturate(1.15) contrast(1.05);
+      display: block;
   }
   .gaming-card{
       position: relative;
   }
   .card-overlay{
       position: absolute;
-      inset: auto 20px 20px;
-      padding: 18px 22px;
+      left: 24px;
+      bottom: 24px;
+      padding: 20px 24px;
       border-radius: 24px;
-      background: rgba(10, 15, 32, 0.92);
-      border: 1px solid rgba(255,255,255,0.09);
-      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+      background: rgba(10, 15, 32, 0.96);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 22px 60px rgba(0,0,0,0.45);
       color: #ffffff;
-      max-width: 280px;
+      max-width: 300px;
+      backdrop-filter: blur(12px);
   }
   .card-overlay strong{
       display: block;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       margin-bottom: 8px;
   }
   .card-overlay p{
       margin: 0;
       color: #94a3b8;
   }
+  .glow-ring{
+      position: absolute;
+      inset: 12px;
+      border-radius: 40px;
+      box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.18),
+                  0 0 60px 14px rgba(79, 70, 229, 0.14),
+                  0 0 120px 32px rgba(79, 70, 229, 0.08);
+      pointer-events: none;
+      mix-blend-mode: screen;
+  }
+
+  .platform-features{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 1180px;
+      margin: 0 auto 60px;
+      padding: 0 50px;
+  }
+  .feature-card{
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 30px 26px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .feature-card:hover{
+      transform: translateY(-6px);
+      border-color: rgba(94, 114, 255, 0.4);
+  }
+  .feature-card span{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(111, 66, 255, 0.12);
+      color: #c7d2fe;
+      font-weight: 700;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+  }
+  .feature-card h2{
+      margin: 0 0 16px;
+      font-size: 1.6rem;
+      color: #ffffff;
+  }
+  .feature-card p{
+      margin: 0;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+  }
+
+  .cta-banner{
+      max-width: 1180px;
+      margin: 0 auto 80px;
+      padding: 32px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.18), rgba(255,255,255,0.06));
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.16);
+  }
+  .cta-banner strong{
+      display: block;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+  }
+  .cta-banner p{
+      margin: 0;
+      color: rgba(255,255,255,0.78);
+      max-width: 640px;
+      line-height: 1.8;
+  }
+  .cta-banner a{
+      color: white;
+      background: #4e63ff;
+      padding: 16px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.25s ease, background-color 0.25s ease;
+  }
+  .cta-banner a:hover{
+      background: #3560f0;
+      transform: translateY(-2px);
+  }
 
   @media (max-width: 950px) {
-      .hero-section,
-      .register-panel{
+      .platform-features,
+      .cta-banner{
           grid-template-columns: 1fr;
       }
+      .platform-features{
+          padding: 0 24px;
+      }
+      .cta-banner{
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 24px;
+      }
+  }
+
+  @media (max-width: 680px) {
       .hero-section{
           padding: 40px 24px;
       }
-      .header{
-          padding: 16px 24px;
+      .hero-copy h1{
+          font-size: 2.8rem;
       }
-      .register-panel{
-          border-radius: 28px;
+      .hero-actions,
+      .game-stats{
+          flex-direction: column;
+          align-items: stretch;
       }
-      .register-info{
-          border-right: none;
-          border-bottom: 1px solid rgba(255,255,255,0.08);
+      .hero-actions button,
+      .hero-cta{
+          width: 100%;
       }
-      .card-overlay{ max-width: none; left: 20px; right: 20px; }
+      .platform-features,
+      .cta-banner{
+          padding: 0 16px;
+      }
+      .platform-features {
+          gap: 18px;
+      }
+      .cta-banner{
+          padding: 24px;
+      }
   }
-
   @media (max-width: 680px) {
       .header{
           flex-direction: column;
