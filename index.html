@@ -1,35 +1,42 @@
 <!DOCTYPE html>
+<html lang="ar">
 <head>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,200;1,17..18,400..700,200&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<title> Adham Media</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,200;1,17..18,400..700,200&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Adham Media</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="landing-page">
+    <header class="header">
+        <img class="logo" src="images/20461.webp" alt="Adham Media logo" />
+        <nav class="header-links">
+            <a href="index.html">Home</a>
+            <a href="#">Our shop</a>
+            <a href="#">Contact</a>
+            <a class="btn-secondary" href="register.html">Register</a>
+            <button type="button" onclick="location.href='register.html'">Sign in</button>
+        </nav>
+    </header>
 
-
-
-<body class="landing-page" >
-
-<div class="header" >
-    <img class="logo" src="images/20461.webp"/>
-        <div class="header-links">
-                <a href="index.html">Home</a>
-                <a href="#">Our shop</a>
-                <a href="#">Contact</a>
-            <button>Sign in </button>
+    <main class="hero-section">
+        <div class="hero-copy">
+            <span>Welcome To Adham Media!</span>
+            <h1>Best In Media, Designed for Professionals</h1>
+            <p>Discover a modern interface that showcases your services, captures leads, and presents your brand in a polished digital experience.</p>
+            <div class="hero-actions">
+                <div class="search-group">
+                    <input type="search" placeholder="Search services, design and more">
+                    <button type="button">Search</button>
+                </div>
+                <a class="hero-cta" href="register.html">Create Your Account</a>
+            </div>
         </div>
-</div>
-<!--landingpage -->
-    <div  >
-        <span> Welcome To Adham Media!</span>
-        <h1>Best In media Ever!</h1>
-        <p>Welcome To Adham media this page will help you to get your work Professoinal!</p>
-    </div>
-    <input type="search">
-    <button>Search</button>
-    <div>
-        <img src="images/banner-image.jpg" alt="">
-    </div>
-</div>
+        <div class="hero-image">
+            <img src="images/banner-image.jpg" alt="Adham Media banner">
+        </div>
+    </main>
 </body>
+</html>

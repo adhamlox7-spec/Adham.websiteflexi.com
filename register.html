@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,200;1,17..18,400..700,200&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Register | Adham Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="register-page">
+    <header class="header">
+        <img class="logo" src="images/20461.webp" alt="Adham Media logo" />
+        <nav class="header-links">
+            <a href="index.html">Home</a>
+            <a href="#">Our shop</a>
+            <a href="#">Contact</a>
+            <a class="btn-secondary" href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <section class="register-panel">
+            <div class="register-info">
+                <span>ابدأ الآن</span>
+                <h1>انشئ حسابك في Adham Media</h1>
+                <p>هذه صفحة تسجيل تجريبية تعرض نموذج احترافي دون اتصال فعلي بقاعدة بيانات. يمكنك استخدامها للتصميم فقط.</p>
+                <div class="register-stats">
+                    <div>
+                        <strong>120+</strong>
+                        <p>عملاء راضون</p>
+                    </div>
+                    <div>
+                        <strong>45</strong>
+                        <p>خدمة جاهزة</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="register-form" onsubmit="event.preventDefault(); document.getElementById('successMessage').classList.add('visible');">
+                <div class="input-group">
+                    <label for="fullname">الاسم بالكامل</label>
+                    <input id="fullname" type="text" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input id="email" type="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">كلمة المرور</label>
+                    <input id="password" type="password" placeholder="أدخل كلمة مرور قوية" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">تأكيد كلمة المرور</label>
+                    <input id="confirmPassword" type="password" placeholder="أعد كتابة كلمة المرور" required>
+                </div>
+                <button class="btn-primary" type="submit">إنشاء حساب</button>
+                <p class="helper-text">لا يتم إنشاء حساب بالفعل. هذا نموذج عرضي فقط.</p>
+                <p id="successMessage" class="success-message">تم إرسال البيانات بنجاح! هذا مثال عرض فقط.</p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
