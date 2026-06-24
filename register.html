@@ -1,63 +1,69 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Register | Adham Media</title>
+    <title>Register | Adham Gaming Arena</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body class="register-page">
-    <header class="header">
-        <img class="logo" src="images/20461.webp" alt="Adham Media logo" />
-        <nav class="header-links">
+    <header class="site-header">
+        <div class="brand">
+            <img class="logo" src="images/20461.webp" alt="Adham Gaming Logo">
+            <div>
+                <span class="brand-label">Adham</span>
+                <p class="brand-subtitle">Gaming Arena</p>
+            </div>
+        </div>
+        <nav class="nav-menu">
             <a href="index.html">Home</a>
-            <a href="#">Our shop</a>
-            <a href="#">Contact</a>
-            <a class="btn-secondary" href="register.html">Register</a>
+            <a href="#features">Services</a>
+            <a href="#about">About</a>
+            <a class="nav-button" href="register.html">Register</a>
         </nav>
     </header>
 
     <main class="form-container">
         <section class="register-panel">
             <div class="register-info">
-                <span>ابدأ الآن</span>
-                <h1>انشئ حسابك في Adham Media</h1>
-                <p>هذه صفحة تسجيل تجريبية تعرض نموذج احترافي دون اتصال فعلي بقاعدة بيانات. يمكنك استخدامها للتصميم فقط.</p>
+                <span>Get Started</span>
+                <h1>Create your Adham Gaming account</h1>
+                <p>This is a demo registration page showing a polished form without real database connection. Use it for design preview only.</p>
                 <div class="register-stats">
                     <div>
                         <strong>120+</strong>
-                        <p>عملاء راضون</p>
+                        <p>Satisfied players</p>
                     </div>
                     <div>
                         <strong>45</strong>
-                        <p>خدمة جاهزة</p>
+                        <p>Ready events</p>
                     </div>
                 </div>
             </div>
 
             <form class="register-form" onsubmit="event.preventDefault(); document.getElementById('successMessage').classList.add('visible');">
                 <div class="input-group">
-                    <label for="fullname">الاسم بالكامل</label>
-                    <input id="fullname" type="text" placeholder="أدخل اسمك" required>
+                    <label for="fullname">Full name</label>
+                    <input id="fullname" type="text" placeholder="Enter your full name" required>
                 </div>
                 <div class="input-group">
-                    <label for="email">البريد الإلكتروني</label>
+                    <label for="email">Email address</label>
                     <input id="email" type="email" placeholder="example@mail.com" required>
                 </div>
                 <div class="input-group">
-                    <label for="password">كلمة المرور</label>
-                    <input id="password" type="password" placeholder="أدخل كلمة مرور قوية" required>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Enter a strong password" required>
                 </div>
                 <div class="input-group">
-                    <label for="confirmPassword">تأكيد كلمة المرور</label>
-                    <input id="confirmPassword" type="password" placeholder="أعد كتابة كلمة المرور" required>
+                    <label for="confirmPassword">Confirm password</label>
+                    <input id="confirmPassword" type="password" placeholder="Re-enter your password" required>
                 </div>
-                <button class="btn-primary" type="submit">إنشاء حساب</button>
-                <p class="helper-text">لا يتم إنشاء حساب بالفعل. هذا نموذج عرضي فقط.</p>
-                <p id="successMessage" class="success-message">تم إرسال البيانات بنجاح! هذا مثال عرض فقط.</p>
+                <button class="btn-primary" type="submit">Create Account</button>
+                <p class="helper-text">This page is for presentation only and does not create a real account.</p>
+                <p id="successMessage" class="success-message">Form submitted successfully! This is a demo only.</p>
             </form>
         </section>
     </main>
