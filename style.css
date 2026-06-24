@@ -1,0 +1,41 @@
+ 
+
+    body{
+        margin: 0;
+          font-family: "Roboto", sans-serif;
+} 
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .header-links a {
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+        border-radius: 15px;
+        
+    }
+    .header-links a:hover{
+        background-color: #2386fe;
+        color: black;
+
+    }
+    .header-links button{
+        background-color: red;
+        border-radius: 15px;
+        padding: 5px 15px;
+        color: white;
+        border: none;
+    }
+    .header-links button:hover{
+        background-color: black;
+    }
+  .landing-page{
+background-color: #0171f9;
+  }
