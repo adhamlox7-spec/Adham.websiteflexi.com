@@ -15,10 +15,12 @@ html, body {
   scroll-behavior: smooth;
 }
 body {
-  direction: ltr;
   background: radial-gradient(circle at top left, #0d122e 0%, #060811 45%, #02040a 100%);
   overflow-x: hidden;
   animation: pageFade 0.9s ease both;
+}
+.register-page {
+  direction: ltr;
 }
 a {
   text-decoration: none;
